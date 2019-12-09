@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.e25b71bc03e14d8dd8d5a9e2f2a807b6.js"
+  "/precache-manifest.b0ffe3dd4963bb85cca45571352252ed.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "sort-app"});
