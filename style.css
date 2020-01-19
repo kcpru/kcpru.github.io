@@ -32,10 +32,11 @@ body {
     z-index: 10;
     cursor: default;
     max-width: 40%;
+    font-size: 3rem;
 }
 
 .logo {
-    color: #ff8906
+    color: #f25f4c;
 }
 
 .center {
@@ -50,6 +51,15 @@ h2 {
 
 .space {
     margin-top: 20%;
+}
+
+.imp{
+    font-weight: bold;
+    color: #f25f4c;
+}
+
+img{
+    width: 100%;
 }
 
 
