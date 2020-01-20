@@ -1,5 +1,7 @@
 
-.icon-print:before { content: '\e800'; } /* '' */
-.icon-spin2:before { content: '\e831'; } /* '' */
-.icon-thumbs-up-alt:before { content: '\f164'; } /* '' */
-.icon-thumbs-down-alt:before { content: '\f165'; } /* '' */
+.icon-down-big:before { content: '\e800'; } /* '' */
+.icon-up-big:before { content: '\e801'; } /* '' */
+.icon-print:before { content: '\e802'; } /* '' */
+.icon-thumbs-up:before { content: '\e803'; } /* '' */
+.icon-thumbs-down:before { content: '\e804'; } /* '' */
+.icon-cogs:before { content: '\e805'; } /* '' */

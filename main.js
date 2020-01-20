@@ -1,3 +1,5 @@
+"use strict";
+
 class Slider {
     constructor(
         data = {
@@ -12,40 +14,35 @@ class Slider {
 
     createButton() {
         const upButton = document.createElement("button");
-        upButton.style.cssText = `
-            border: 2px solid #FFF6;
+        const buttonCssText = style => `
+            border: none;
             background: transparent;
-            transition: .1s;
+            transition: .2s;
             cursor: pointer;
-            width: 50px;
-            height: 40px;
             position: fixed;
             right: 50px;
-
-            bottom: 50px;
-            border-radius: 0px 0px 25px 25px;
+            font-size: 2rem;
+            color: #fffffe80;
+            ${style || ""}
         `;
+        upButton.style.cssText = buttonCssText`
+            bottom: 100px;
+        `;
+
+        upButton.innerHTML = `<i class="icon-up-big"></i>`;
         upButton.onclick = () => {
-            this.scroll(1);
+            this.scroll(-1);
         };
         document.body.appendChild(upButton);
 
         const downButton = document.createElement("button");
-        downButton.style.cssText = `
-            border: 2px solid #FFF6;
-            background: transparent;
-            transition: .1s;
-            cursor: pointer;
-            width: 50px;
-            height: 40px;
-            position: fixed;
-            right: 50px;
-
-            bottom: 100px;
-            border-radius: 25px 25px 0px 0px;
+        downButton.style.cssText = buttonCssText`
+            bottom: 50px;
         `;
+        
+        downButton.innerHTML = '<i class="icon-down-big"></i>';
         downButton.onclick = () => {
-            this.scroll(-1);
+            this.scroll(1);
         };
         document.body.appendChild(downButton);
     }
@@ -94,7 +91,12 @@ class Selection {
         selection.classList.add("selection");
         window.onclick = () => {
             this.selObj = window.getSelection().toString();
-            selection.innerHTML = this.selObj;
+            if (this.selObj === "" || this.selObj === " ") {
+                selection.classList.add("selection__empty");
+            } else {
+                selection.innerHTML = this.selObj;
+                selection.classList.remove("selection__empty");
+            }
         };
         document.body.appendChild(selection);
     }
@@ -104,3 +106,32 @@ class Selection {
 }
 
 const selection = new Selection().on();
+
+class Image {
+    constructor() {
+        this.isActive = false;
+    }
+    large(img){
+
+        if(this.isActive){
+            img.classList.remove("image__active")
+        }else{
+            img.classList.add("image__active")
+        }
+        this.isActive = !this.isActive
+    }
+
+    addEvent(){
+        const images = document.querySelectorAll("img")
+        for(const img of images){
+           img.onclick = () => this.large(img)
+        }
+    }
+
+    on() {
+        this.addEvent()
+    }
+}
+
+const img = new Image()
+img.on()

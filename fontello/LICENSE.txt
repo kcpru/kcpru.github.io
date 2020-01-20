@@ -10,12 +10,21 @@ Font license info
    Homepage:  http://fortawesome.github.com/Font-Awesome/
 
 
-## Fontelico
+## Entypo
 
-   Copyright (C) 2012 by Fontello project
+   Copyright (C) 2012 by Daniel Bruce
 
-   Author:    Crowdsourced, for Fontello project
+   Author:    Daniel Bruce
    License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://fontello.com
+   Homepage:  http://www.entypo.com
+
+
+## Elusive
+
+   Copyright (C) 2013 by Aristeides Stathopoulos
+
+   Author:    Aristeides Stathopoulos
+   License:   SIL (http://scripts.sil.org/OFL)
+   Homepage:  http://aristeides.com/
 
 
