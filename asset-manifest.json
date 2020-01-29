@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/static/js/main.bfa90772.chunk.js",
+    "main.js.map": "/static/js/main.bfa90772.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c2b20a0b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c2b20a0b.js.map",
+    "static/css/2.eccd3b0d.chunk.css": "/static/css/2.eccd3b0d.chunk.css",
+    "static/js/2.2213dec7.chunk.js": "/static/js/2.2213dec7.chunk.js",
+    "static/js/2.2213dec7.chunk.js.map": "/static/js/2.2213dec7.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.80dcc07fd9a1edae4da9f7cb0640814f.js": "/precache-manifest.80dcc07fd9a1edae4da9f7cb0640814f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.eccd3b0d.chunk.css.map": "/static/css/2.eccd3b0d.chunk.css.map",
+    "static/js/2.2213dec7.chunk.js.LICENSE": "/static/js/2.2213dec7.chunk.js.LICENSE",
+    "static/media/index.css": "/static/media/montserrat-latin-900italic.a8ec4957.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2b20a0b.js",
+    "static/css/2.eccd3b0d.chunk.css",
+    "static/js/2.2213dec7.chunk.js",
+    "static/js/main.bfa90772.chunk.js"
+  ]
+}
