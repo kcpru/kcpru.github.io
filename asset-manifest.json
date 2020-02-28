@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.js": "/static/js/main.14aaa1d5.chunk.js",
+    "main.js.map": "/static/js/main.14aaa1d5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c2b20a0b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c2b20a0b.js.map",
+    "static/css/2.eccd3b0d.chunk.css": "/static/css/2.eccd3b0d.chunk.css",
+    "static/js/2.fac90150.chunk.js": "/static/js/2.fac90150.chunk.js",
+    "static/js/2.fac90150.chunk.js.map": "/static/js/2.fac90150.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ede5c803bc3d8d950d17b191af1a49b3.js": "/precache-manifest.ede5c803bc3d8d950d17b191af1a49b3.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.eccd3b0d.chunk.css.map": "/static/css/2.eccd3b0d.chunk.css.map",
+    "static/js/2.fac90150.chunk.js.LICENSE": "/static/js/2.fac90150.chunk.js.LICENSE",
+    "static/media/detailed_analysis.svg": "/static/media/detailed_analysis.ba832c7a.svg",
+    "static/media/icon_react.svg": "/static/media/icon_react.0fd7c3fe.svg",
+    "static/media/modern_design.svg": "/static/media/modern_design.3cbdda33.svg",
+    "static/media/index.css": "/static/media/montserrat-latin-900italic.a8ec4957.woff",
+    "static/media/progressive_app.svg": "/static/media/progressive_app.9269a188.svg",
+    "static/media/server_cluster.svg": "/static/media/server_cluster.2ca29cf0.svg",
+    "static/media/static_assets.svg": "/static/media/static_assets.0bf1a36b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2b20a0b.js",
+    "static/css/2.eccd3b0d.chunk.css",
+    "static/js/2.fac90150.chunk.js",
+    "static/js/main.14aaa1d5.chunk.js"
+  ]
+}
