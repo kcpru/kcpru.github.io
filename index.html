@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strona główna | Frameworki JS</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Nic nie znaleziono!</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Nasze serwery w pocie czoła pracowały aby znaleść odpowiednie
+              wyniki dla tego wyszukiwania, ale nic nie znalazły.
+            </p>
+            <hr />
+            <p class="mb-0">
+              W przypadku regularnego wystąpywania tego alertu lepiej nie
+              kontaktuj się z administratorem strony.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Zamknij
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand mb-0 h1" href="./index.html">Frameworki JS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./react.html">React</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./vue.html">Vue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./angular.html">Angular</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Wpisz coś"
+              aria-label="Wpisz coś"
+            />
+            <button
+              type="button"
+              class="btn btn-success"
+              data-toggle="modal"
+              data-target="#modal"
+            >
+              Szukaj
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <section class="jumbotron">
+      <div class="container">
+        <h1 class="pb-5">Czym są i do czego służą frameworki?</h1>
+        <p>
+          Programowanie aplikacji webowych jest jedną z najbardziej dynamicznie
+          zmieniających się dziedzin IT. Można żartować, że podczas pisania tego
+          zdania powstał <b>nowy framework JS</b>.
+        </p>
+        <p>
+          Właśnie, frameworki i biblioteki JS. Ręka w górę ten, który nie
+          potrafi wymienić chociaż jednego takiego narzędzia.
+          <u
+            >React, Angular, Ember, Meteor, Mithril, Polymer, Aurelia,
+            VanillaJS</u
+          >… Jak to śpiewał pewien mądry człowiek We’re gonna build a framework.
+        </p>
+        <p>
+          Przez wiele lat strony WWW (bo trudno było je jeszcze nazwać
+          aplikacjami) istniały sobie w cieniu ich desktopowych kuzynów.
+          Zmieniło się to wraz z powstaniem <b>Flasha i CSS</b>, które
+          umożliwiły tworzenie <u>efektownych i estetycznych treści</u>. Potem
+          pojawiły się blogi i systemy CMS (takie jak WordPress) umożliwiające
+          tworzenie dynamicznie generowanych treści przez użytkowników –
+          weszliśmy w Web 2.0. Jednocześnie wciąż było nie do pomyślenia, aby
+          aplikacje webowe były w stanie zastąpić te napisane w Javie i C++.
+        </p>
+        <p>
+          Framework JavaScript jest narzędziem, które można wykorzystać do
+          tworzenia <b>zaawansowanych aplikacji internetowych</b>,
+          <u>zwłaszcza SPA (Single Page Application)</u>. W dawnych czasach
+          programiści webowi wdrażali logikę front-endową, opierając się w dużym
+          stopniu na standardowym JS i jQuery. Jednak wraz ze wzrostem
+          złożoności aplikacji front-endowych, narzędzia te się rozrastały, aby
+          sprostać tej złożoności.
+        </p>
+      </div>
+    </section>
+    <section class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card w-100">
+            <img
+              class="card-img-top"
+              src="./images/react.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">React</h5>
+              <p class="card-text">
+                Z ponad 126 000 gwiazdek na GitHubie, jest deklaratywną, wydajną
+                i elastyczną biblioteką JavaScript do budowania interfejsów
+                użytkownika. Tworzenie interaktywnych interfejsów jest naprawdę
+                bezbolesne. Budowanie aplikacji zorientowanych na komponenty
+                jest bardzo ułatwione, a kompatybilność wsteczna jest tutaj
+                traktowana poważnie, dzięki czemu można mieć pewność
+                długotrwałej skuteczności.
+              </p>
+              <a href="./react.html" class="btn btn-primary">Czytaj więcej</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card w-100">
+            <img
+              class="card-img-top"
+              src="./images/vue.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Vue</h5>
+              <p class="card-text">
+                Stworzony przez Evana You i ponad 234 użytkowników z GitHuba, to
+                progresywny framework do tworzenia interfejsów użytkownika.
+                Składa się z dostępnej biblioteki podstawowej, która skupia się
+                tylko na warstwie widoku, oraz ekosystemu bibliotek
+                pomocniczych, które pomagają rozwiązać złożoność dużych Single
+                Page Application.
+              </p>
+              <a href="./vue.html" class="btn btn-primary">Czytaj więcej</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card w-100">
+            <img
+              class="card-img-top"
+              src="./images/angular.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Angular</h5>
+              <p class="card-text">
+                Umożliwia programistom tworzenie aplikacji webowych na
+                urządzeniach mobilnych i na komputerach. Posiada najbardziej
+                przydatne narzędzie CLI dla początkujących, aby łatwo zacząć.
+                Jest nawet klient GUI, zwany konsolą.
+              </p>
+              <a href="./angular.html" class="btn btn-primary">Czytaj więcej</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container py-5">
+      <hr />
+      @ Kacper Ślusarczyk - niektóre prawa zastrzerzone
+    </footer>
+  </body>
+</html>

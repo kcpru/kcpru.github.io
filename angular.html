@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angular | Frameworki JS</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Nic nie znaleziono!</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Nasze serwery w pocie czoła pracowały aby znaleść odpowiednie
+              wyniki dla tego wyszukiwania, ale nic nie znalazły.
+            </p>
+            <hr />
+            <p class="mb-0">
+              W przypadku regularnego wystąpywania tego alertu lepiej nie
+              kontaktuj się z administratorem strony.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Zamknij
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand mb-0 h1" href="./index.html">Frameworki JS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./react.html">React</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./vue.html">Vue</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./angular.html">Angular</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Wpisz coś"
+              aria-label="Wpisz coś"
+            />
+            <button
+              type="button"
+              class="btn btn-success"
+              data-toggle="modal"
+              data-target="#modal"
+            >
+              Szukaj
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Main -->
+    <section class="container text-center my-3">
+      <div aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html">Frameworki</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Angular</li>
+        </ol>
+        <img
+          src="./images/angular.jpg"
+          class="rounded img-fluid"
+          alt="Responsive image"
+        />
+        <h1 class="my-5">Angular</h1>
+      </div>
+      <div class="container">
+        <hr />
+        <div class="row">
+          <div class="col-sm py-5">
+            <h3>Popularność</h3>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                style="width: 30%"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+          <div class="col-sm py-5">
+            <h3>Gwiazdki na Githubie</h3>
+            <a class="btn btn-success" href="https://github.com/angular/angular"
+              >61 100</a
+            >
+          </div>
+          <div class="col-sm py-5">
+            <h3>Link do dokumentacji</h3>
+            <a class="btn btn-info" href="https://angular.io/">Link</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </section>
+    <section class="container">
+      <h2>Co ludzie sobie w nim cenią</h2>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-info">Material design</li>
+        <li class="list-group-item list-group-item-primary">Że od google</li>
+        <li class="list-group-item list-group-item-secondary">
+          Wymuszone użycie TypeScript
+        </li>
+        <li class="list-group-item list-group-item-success">
+          Duża ilość błędów
+        </li>
+        <li class="list-group-item list-group-item-dark">
+          Wysoki próg wejścia
+        </li>
+        <li class="list-group-item list-group-item-light">
+          Nieprzystosowanie do tworzenia lekkich stron
+        </li>
+      </ul>
+    </section>
+    <footer class="container py-5">
+      <hr />
+      @ Kacper Ślusarczyk - niektóre prawa zastrzerzone
+    </footer>
+  </body>
+</html>
